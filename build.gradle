@@ -29,3 +29,11 @@ jar {
         }
     }
 }
+
+test {
+    exclude '**/*IntegrationTest*'
+}
+
+task allTests( type: Test ) {
+    include '**/*Test*'
+}
